@@ -1,0 +1,164 @@
+
+td {
+    border-bottom: 1px solid;
+    border-color: #ccc;
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(248, 188, 58, 0.507);
+    
+}
+.price{
+    background-color: rgba(2, 209, 2, 0.507);
+}
+
+.confirmcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.tabla{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.formulario{
+    transition: all 500ms ease;
+    transform: translatey(-100%);
+    height: 30rem;
+    width:36rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin: 2rem;
+    padding:2rem;
+    border:2px solid;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgba(248, 188, 58);
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 30%;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display:none
+}
+
+.confcheck {
+    display:none;
+}
+.confcheck:checked + .formulario{
+    visibility: visible;
+    transition: all 500ms ease;
+    transform: translatey(25%);
+}
+
+.confcheck:checked + .capa{
+    display:block;
+}
+
+.formulario input {
+    width: 90%;
+    height: 2rem;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+
+.formulario label{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.horario input {
+    width: 40%;
+    height: 2rem;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+
+.horario {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.botones{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    width:100%;
+}
+
+.botones button {
+    width: 20%;
+    height: 2rem;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+.botones button:hover{
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+.descartar{
+    width: 35%;
+    height: 2rem;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-decoration: none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.continuar{
+    width: 35%;
+    height: 2rem;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor: pointer;
+}
+
+.ordenButtons{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    width:30rem;
+}
+
+.orden{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}

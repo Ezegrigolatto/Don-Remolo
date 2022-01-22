@@ -1,0 +1,32 @@
+.logo {
+  height: 18vh;
+  margin-left: 1rem;
+}
+.titulo {
+  color: rgb(218, 78, 13);
+  margin-left: 2rem;
+}
+.datos {
+  position: absolute;
+  right: 6rem;
+}
+.homeContainer {
+  background-color: #fbf1d9;
+  display: flex;
+  align-items: center;
+  height: 18vh;
+  position:fixed;
+  top:0;
+  width: 100%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .titulo {
+    display: none;
+  }
+  .logo {
+    height: 15vh;
+    margin-left: 0rem;
+  }
+}
